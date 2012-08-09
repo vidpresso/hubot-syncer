@@ -8,6 +8,8 @@ That enables github post-commit hooks to automatically be deployed to Heroku.
 The chatroom adapter is [Partychat][partychat] by default.
 
 [heroku]: http://www.heroku.com
+[github]: https://github.com/vidpresso/hubot-syncer/blob/master/scripts/github.coffee
+[partychat]: http://partychapp.appspot.com/
 
 ## Configuration
 
