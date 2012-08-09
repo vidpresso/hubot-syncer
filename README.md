@@ -8,10 +8,21 @@ That enables github post-commit hooks to automatically be deployed to Heroku.
 The chatroom adapter is [Partychat][partychat] by default.
 
 [heroku]: http://www.heroku.com
-[github]: https://github.com/vidpresso/hubot-syncer/blob/master/scripts/github.coffee
-[partychat]: http://partychapp.appspot.com/
 
 ## Configuration
+
+Set up these environment variables:
+
+`PROD_URL`: The url for production. (Hubot tells you when it's done.)
+`STAGE_URL`: Same as above, but for staging.
+`PRIV`: Set up your private key for Heroku and Github.
+`GITHUB_URL`: Your github repo to pull from.
+`HEROKU_PROD_REPO`: Your heroku production repo URL to push to.
+`HEROKU_STAGE_REPO`: Your heroku stage repo to push to.
+`HEROKU_URL`: The url of your hubot on heroku. (Used to keepalive, I
+think)
+`HUBOT_POST_ENDPOINT`: Used for partychat. (check
+hubot-partychat-hooks)
 
 ## Playing with Hubot
 
@@ -144,4 +155,5 @@ Please check out the [deploying hubot onto UNIX][deploy-unix] and
 
 You may want to get comfortable with `heroku logs` and `heroku restart`
 if you're having issues.
+
 
